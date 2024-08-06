@@ -193,7 +193,7 @@ void Emulator::LoadSystemModules(const std::filesystem::path& file) {
          {"libSceRtc.sprx", &Libraries::Rtc::RegisterlibSceRtc},
          {"libSceJpegEnc.sprx", nullptr},
          {"libSceFiber.sprx", nullptr},
-         {"libSceUlt.sprx", nullptr};
+         {"libSceUlt.sprx", nullptr},
          {"libSceJson2.sprx", nullptr}},
     };
 
