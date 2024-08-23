@@ -285,7 +285,7 @@ std::unique_ptr<GraphicsPipeline> PipelineCache::CreateGraphicsPipeline() {
 
         if (stage != Shader::Stage::Fragment && stage != Shader::Stage::Vertex) {
             LOG_ERROR(Render_Vulkan, "Unsupported shader stage {}. PL creation skipped.", stage);
-            return {};
+            continue;
         }
 
         const u64 lookup_hash = HashCombine(hash, binding);
